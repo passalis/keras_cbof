@@ -22,11 +22,11 @@ In [example.py](example.py) the ability of CBoF to reduce the size of a CNN used
 
 |Pooling  | FC Input | # Params | Error | Error ( Scale = 0.8) |
 | ---             | ---   | ---       | ---   | ---   |
-Max (4 filters)	  |	100   |	58,318    |	1.21  | -     |
-Μax (32 filters   | 800	  | 424,810	  |	0.65	| -     |
-Max (64 filter)	  | 1600	| 843,658	  |	0.66  | -     |
+Max (4 f.)	  |	100   |	58,318    |	1.21  | -     |
+Μax (32 f.)   | 800	  | 424,810	  |	0.65	| -     |
+Max (64 f.)	  | 1600	| 843,658	  |	0.66  | -     |
 
-
+(The notation *f* is used to refer to the number of *filters* in the last convolutional layer)
 
 **Global Pooling**:
 
@@ -40,7 +40,7 @@ BoF (32 f., 64 c.)      |	64	  | 50,090		| **0.96**	| **2.24**	|
 GMP (128 f.)	  | 128	  | 108,490 	| 1.35  |	3.48  |
 BoF (32 f., 128 c.)      |	128	  | 84,970		| **0.78**	| **2.23**	| 
 
-(The notation *f* is used to refer to the number of *filters*, while the notation *c* is used to refer to the number of codewords)
+(The notation *f* is used to refer to the number of *filters* in the last convolutional layer, while the notation *c* is used to refer to the number of codewords)
 
 **Spatial Pooling**:
 
@@ -50,7 +50,7 @@ BoF (32 f., 128 c.)      |	128	  | 84,970		| **0.78**	| **2.23**	|
 SPP (8 f.)	    |	40	  | 28,754	  |	1.85  |	3.96  |
 Spatial BoF (32, 8 c.)      |	32	  | 31,858		| **1.26**	| **2.18**	| 
 SPP (16 f.)    |	80	  | 51,546	  |	1.25  |	2.61  |
-Spatial SBoF (32, 16 c.)     |	64	  | 48,506	  |	**0.81**	| **1.57**  |	
+Spatial BoF (32, 16 c.)     |	64	  | 48,506	  |	**0.81**	| **1.57**  |	
 SPP (32 f. )   |	160	  | 97,130	  |	0.83  |	1.94  |
 SPP (64 f. )   |	320	  | 188,298		  |	0.76  |	1.74  |
 Spatial SBoF (64, 32 c.)	    |128	  | 92,074	  |	**0.61**	| **1.40**	| 
